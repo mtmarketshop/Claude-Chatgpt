@@ -6,7 +6,7 @@ Current task: T-001 — Mise en place du système de coordination multi-agents
 GitHub issue: none
 Current branch: main
 Base branch: main
-Last known commit: 5a3c7b9 (+ commit de mise en place du protocole, voir `git log`)
+Last known commit: 219b416 (protocole en place ; voir `git log` pour la suite)
 Pull request: none
 
 ## Objective
