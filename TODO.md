@@ -1,5 +1,5 @@
-# TODO
+# TODO — déplacé
 
-- [x] Relier le dossier au dépôt GitHub (remote + pull)
-- [ ] Définir l'objectif et la stack du projet, compléter `README.md` et `PROJECT_STATE.md`
-- [x] Créer `AI_HANDOFF.md`, `PROJECT_STATE.md`, `TODO.md`
+Les tâches sont désormais dans **[`.ai/TASKS.md`](.ai/TASKS.md)** (états : TODO / IN PROGRESS / BLOCKED / DONE).
+
+Ce fichier n'est conservé que comme renvoi. Ne pas y écrire de tâches.
