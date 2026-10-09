@@ -49,5 +49,5 @@ D-001 et D-002 conservées. D-003 : laisser les huit fiches Shopify telles quell
 - Ne transmettre aucun secret dans Git.
 
 ## EXACT NEXT ACTION
-Claude : ouvrir github-local, lire CLAUDE.md et les documents de coordination ; vérifier git fetch/status/log et la branche chore/t-004-relais-claude. Confirmer la prise de relais comme assistant e-commerce puis attendre la prochaine demande. Respecter le choix de laisser les fiches telles quelles. Ne pas refaire l'audit ni appliquer les propositions. Aucun merge, déploiement ou changement Shopify autorisé par ce relais.
+Relais pris par Claude le 2026-10-10. Connecteurs vérifiés : Shopify OK, 4Seller OK (Chrome). État des canaux et décision D-004 (annonces TikTok conservées) : voir `.ai/SESSION_LOG.md` et `.ai/DECISIONS.md`. Prochaine étape possible : vérifier les 14 annonces eBay une par une (lecture seule), puis attendre la demande de l'utilisateur. Aucune dépublication ni modification Shopify/4Seller sans accord ; aucun merge ni déploiement.
 
