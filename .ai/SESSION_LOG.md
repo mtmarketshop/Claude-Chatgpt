@@ -23,3 +23,4 @@
 - 4Seller : TikTok 167 en vente / 382 supprimées / 52 en vérification ; eBay 14 en vente / 2 inactives (détail en erreur « status can't be null ») ; Temu 0 en vente / 4 inactives / 611 supprimées ; Shopify 13 en vente.
 - Décision D-004 : garder les annonces TikTok des 8 logiciels. Aucune modification Shopify/4Seller/TikTok.
 - Non vérifié : contenu des annonces eBay, auteur de la création TikTok, origine des stocks 18/19.
+- eBay vérifié (lecture seule, après contournement : cliquer Inactif puis En vente) : 14 en vente = 8 logiciels diagnostic (SKU DIAG-*-COURRIER, publiés le 2026-10-03, 6,99–8,99 EUR, stock 18–20), écouteurs ECO (12 variantes), tondeuse TON (4), survêtement (5), ventilateur LED (4), lunettes LUN-001/002. 2 inactives : logiciel VCDS 25.3 « OBD non inclus » (doublon ancien) et ventilateur LED. Stocks 18/19 identiques sur eBay et TikTok : probablement alignés sur Shopify (non confirmé).
