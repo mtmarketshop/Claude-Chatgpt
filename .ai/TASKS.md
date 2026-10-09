@@ -12,3 +12,9 @@
 
 - Relier le dossier au dépôt GitHub : DONE (2026-10-01, Claude).
 - Création initiale des fichiers de suivi : DONE (2026-10-01, Claude) — migrés vers `.ai/`.
+
+## T-004 — Relais e-commerce à Claude
+- État : DONE (préparation du contexte ; réception par Claude non confirmée).
+- Agent : Codex. Branche : chore/t-004-relais-claude.
+- Analyse Shopify en lecture seule terminée ; décision utilisateur : laisser les huit fiches telles quelles.
+- T-002 et T-003 restent en attente, sans autorisation de créer une application.

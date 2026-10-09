@@ -1,57 +1,53 @@
 # AI HANDOFF
 
-Last updated: 2026-10-05
-Agent: Claude Code (Sonnet 5.5)
-Current task: T-001 — Mise en place du système de coordination multi-agents
-GitHub issue: none
-Current branch: main
+Last updated: 2026-10-10
+Agent: Codex
+Current task: T-004 — Relais e-commerce à Claude
+Current branch: chore/t-004-relais-claude
 Base branch: main
-Last known commit: 219b416 (protocole en place ; voir `git log` pour la suite)
-Pull request: none
+Last known commit: 368e703 avant ce checkpoint ; voir git log pour le commit de relais
+GitHub issue / Pull request: none (checkpoint documentaire)
 
 ## Objective
-
-Faire de ce dépôt la mémoire centrale commune de Claude Code, Codex, ChatGPT Work et Claude Cowork, pour pouvoir changer d'agent à tout moment sans perte de contexte.
+Transmettre à Claude le contexte de MTMarketShop via le dépôt local et GitHub.
 
 ## Current state
-
-Protocole en place : `AI_WORKFLOW.md`, `AGENTS.md`, `CLAUDE.md`, `.ai/*`, `.github/pull_request_template.md`. Aucun code applicatif. Le projet applicatif n'est pas défini (objectif et stack inconnus).
+Analyse Shopify terminée en lecture seule. Aucune modification Shopify. L'utilisateur a explicitement décidé de laisser les huit fiches de diagnostic automobile telles quelles. Aucun travail de correction en cours ou autorisé.
+Le dépôt reste une mémoire de coordination sans application. T-002 et T-003 restent en attente ; aucune stack ou application demandée.
 
 ## Completed
-
-- Analyse du dépôt (contenu initial : README, AI_HANDOFF.md, PROJECT_STATE.md, TODO.md).
-- Création du protocole commun et des fichiers de coordination.
-- Migration de l'ancien `AI_HANDOFF.md` / `TODO.md` vers `.ai/` (racine = renvois).
+- Connexion Shopify de Codex vérifiée : MTMarketShop, mtmarketshop.com.
+- Lecture de 13 produits, 10 collections et des huit fiches détaillées de diagnostic.
+- Rapports des 30 derniers jours : 118 sessions, 2 avec ajout au panier, 1 atteignant le checkout, 0 finalisée dans le rapport des sessions ; rapport des ventes : 1 commande et 8,99 EUR. Différence non expliquée ; ne pas conclure à un bug.
+- Constats : titres « Interface diagnostic » mais descriptions de logiciels et interface physique exclue ; trois collections vides (Accessoires automobiles, Fichiers ECU sur mesure, Jeux et jouets) ; plusieurs variantes à stock nul.
+- Propositions présentées sans application. Décision finale : laisser tel quel.
 
 ## In progress
-
-Rien.
+Relais documentaire uniquement. Claude n'a pas été lancé et n'a pas confirmé réception.
 
 ## Files changed
-
-`AI_WORKFLOW.md`, `AGENTS.md`, `CLAUDE.md`, `.ai/HANDOFF.md`, `.ai/TASKS.md`, `.ai/DECISIONS.md`, `.ai/SESSION_LOG.md`, `.github/pull_request_template.md` (nouveaux) ; `AI_HANDOFF.md`, `TODO.md`, `PROJECT_STATE.md`, `README.md` (modifiés).
+.ai/HANDOFF.md, .ai/TASKS.md, .ai/DECISIONS.md, .ai/SESSION_LOG.md.
 
 ## Tests performed
-
-Aucun test automatisé (pas de code). Relecture manuelle des liens entre fichiers ; vérification de l'absence de secrets par recherche de motifs.
+- git fetch/status/log échouent dans le dossier parent : absence de .git.
+- Ancien clone Documents/GitHub cité précédemment : non trouvé.
+- Nouveau clone GitHub et fetch réussis ; état initial propre sur main, HEAD 368e703.
+- Relecture des documents ; git diff --check réussi avant commit. Aucun test applicatif nécessaire.
 
 ## Problems / blockers
-
-- Aucun script build/test/lint à documenter (pas de code).
-- Claude in Chrome non connecté pendant la mise en place : fichiers créés via clone local puis poussés.
-- Pas de `gh` CLI installé : Issues/PR à créer via l'interface web ou après installation de `gh`.
+- Site public inaccessible via l'outil web : apparence, menus et parcours d'achat non vérifiés.
+- Licence, support livré, activation, compatibilité précise et prérequis des logiciels non vérifiés.
+- Les accès Shopify de Codex ne sont pas transférés à Claude ; vérifier son propre accès seulement si nécessaire pour la prochaine demande.
 
 ## Decisions already made
-
-- `AI_WORKFLOW.md` = unique source des règles ; `AGENTS.md` et `CLAUDE.md` sont de courts renvois (voir `.ai/DECISIONS.md` D-001).
-- `.ai/HANDOFF.md` remplace l'ancien `AI_HANDOFF.md` racine.
+D-001 et D-002 conservées. D-003 : laisser les huit fiches Shopify telles quelles.
 
 ## Important context
-
-- Clone local de l'utilisateur : `C:\Users\PC\Documents\GitHub\Claude-Chatgpt` (Windows).
-- L'utilisateur parle français, veut des échanges courts et un avis franc (✅/⚠️/❌).
-- Ne jamais mettre de secrets dans le dépôt.
+- Clone opérationnel : C:\Users\PC\Desktop\Claude-Chatgpt-main\github-local.
+- Le dossier parent est une copie sans .git ; ne pas le confondre avec le clone.
+- Français simple ; terminer par « À faire : … Pourquoi : … ». Boutons numérotés pour les prochaines actions utiles.
+- Ne transmettre aucun secret dans Git.
 
 ## EXACT NEXT ACTION
+Claude : ouvrir github-local, lire CLAUDE.md et les documents de coordination ; vérifier git fetch/status/log et la branche chore/t-004-relais-claude. Confirmer la prise de relais comme assistant e-commerce puis attendre la prochaine demande. Respecter le choix de laisser les fiches telles quelles. Ne pas refaire l'audit ni appliquer les propositions. Aucun merge, déploiement ou changement Shopify autorisé par ce relais.
 
-Demander à l'utilisateur la nature du projet (objectif, stack). Puis renseigner `README.md`, `PROJECT_STATE.md` et la section 8 de `AI_WORKFLOW.md` (commandes build/test/lint), créer l'Issue du projet, et ajouter les tâches correspondantes dans `.ai/TASKS.md`.

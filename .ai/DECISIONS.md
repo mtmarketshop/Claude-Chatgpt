@@ -12,3 +12,7 @@ Uniquement les décisions importantes, susceptibles d'être rediscutées.
 - Décision : `.ai/HANDOFF.md` est le handoff officiel ; `AI_HANDOFF.md` et `TODO.md` à la racine deviennent de simples renvois.
 - Raison : conserver les fichiers existants sans créer deux sources de vérité.
 - Conséquences : l'historique Git garde les anciens contenus.
+
+## D-003 — 2026-10-10 — Laisser Shopify tel quel
+- Décision explicite de l'utilisateur : ne pas modifier les huit fiches de diagnostic automobile.
+- Les propositions restent consultatives. Le relais autorise la transmission du contexte, pas des corrections Shopify, un merge ou un déploiement.
