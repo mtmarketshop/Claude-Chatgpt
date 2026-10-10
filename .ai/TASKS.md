@@ -34,4 +34,5 @@
 - Écarts : titres lunettes eBay, galerie écouteurs TikTok 9/12, couverture DE/BE, 7 anciens doublons GR dont 5 variantes NUM supplémentaires, prix catalogue Temu supérieurs.
 - Restent : 51 détails TikTok (indices dans HANDOFF), descriptions TikTok/Temu, galeries Temu, identité visuelle/ordre eBay/TikTok, flux Google/Meta et rendu public final. Anciennes inactives eBay non entièrement comparées.
 - Cause : Chrome reconnecté mais interactions fragiles/bloquées ; descriptions TikTok illisibles et aperçu public 502 ; contenu complet Temu non accessible par la liste.
+- Tentative suivante après choix utilisateur « 1 » : navigateur entièrement non répondant (2 inventaires et ouverture d'un onglet expirés). Reconnexion demandée ; aucun détail supplémentaire lu. Branche vérifiée à 5236dd1.
 - Critère de réussite : un statut vérifié ou explicitement non vérifiable pour chaque champ et chaque canal, sans modification externe. Ne pas marquer DONE tant que les contrôles restants restent possibles mais non réalisés.

@@ -48,3 +48,9 @@
 - Incident : déconnexion Chrome ; utilisateur a confirmé la reconnexion ; nouvel onglet fonctionnel permettant 11 détails supplémentaires, puis blocage des commandes de consultation sur page 2. Rapport et reprise exacte enregistrés.
 - Git : fetch réussi avant documentation, HEAD 799029e et branche propre ; gh indisponible pour Issue. Aucun code modifié ni test applicatif requis ; git diff --check avant checkpoint.
 - Aucune écriture Shopify/4Seller/eBay/TikTok/Temu, aucune réautorisation, aucun envoi externe ni automatisation.
+
+## 2026-10-10 — Codex — Tentative de reprise T-005
+- Choix utilisateur « 1 » : reprendre les contrôles manquants en lecture seule.
+- Protocole, rapport et relais relus ; fetch réussi, branche propre et synchronisée à 5236dd1.
+- Navigateur non répondant : deux tentatives d'inventaire et une ouverture directe d'onglet Chrome expirées. Aucun outil de lecture direct disponible pour les marketplaces/4Seller ; demande de reconnexion adressée à l'utilisateur.
+- Aucun nouveau contrôle produit, couverture inchangée 116/167 TikTok. Aucune modification externe. Documentation seule, git diff --check avant checkpoint.
