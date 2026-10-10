@@ -49,5 +49,5 @@ D-001 et D-002 conservées. D-003 : laisser les huit fiches Shopify telles quell
 - Ne transmettre aucun secret dans Git.
 
 ## EXACT NEXT ACTION
-Relais pris par Claude le 2026-10-10. Connecteurs vérifiés : Shopify OK, 4Seller OK (Chrome). État des canaux et décision D-004 (annonces TikTok conservées) : voir `.ai/SESSION_LOG.md` et `.ai/DECISIONS.md`. Prochaine étape possible : vérifier les 14 annonces eBay une par une (lecture seule), puis attendre la demande de l'utilisateur. Aucune dépublication ni modification Shopify/4Seller sans accord ; aucun merge ni déploiement.
+Relais pris par Claude le 2026-10-10. À FAIRE le 2026-10-12 : contrôle TikTok (D-006). Expéditions : eBay avant 13 oct, TikTok avant 14 oct. Connecteurs vérifiés : Shopify OK, 4Seller OK (Chrome). État des canaux et décision D-004 (annonces TikTok conservées) : voir `.ai/SESSION_LOG.md` et `.ai/DECISIONS.md`. Prochaine étape possible : vérifier les 14 annonces eBay une par une (lecture seule), puis attendre la demande de l'utilisateur. Aucune dépublication ni modification Shopify/4Seller sans accord ; aucun merge ni déploiement.
 
