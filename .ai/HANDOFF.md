@@ -1,27 +1,26 @@
 # AI HANDOFF
 
-Last updated: 2026-10-05
+Last updated: 2026-10-10
 Agent: Claude Code (Sonnet 5.5)
-Current task: T-001 — Mise en place du système de coordination multi-agents
+Current task: T-002 terminé — aucun projet actif
 GitHub issue: none
 Current branch: main
 Base branch: main
-Last known commit: 219b416 (protocole en place ; voir `git log` pour la suite)
+Last known commit: voir `git log --oneline -3` (`chore(ai): relais continu Claude/ChatGPT`)
 Pull request: none
 
 ## Objective
 
-Faire de ce dépôt la mémoire centrale commune de Claude Code, Codex, ChatGPT Work et Claude Cowork, pour pouvoir changer d'agent à tout moment sans perte de contexte.
+Dépôt prêt à lancer un nouveau projet, où Claude et ChatGPT/Codex se relaient : quand l'un s'arrête, l'autre reprend exactement au même point.
 
 ## Current state
 
-Protocole en place : `AI_WORKFLOW.md`, `AGENTS.md`, `CLAUDE.md`, `.ai/*`, `.github/pull_request_template.md`. Aucun code applicatif. Le projet applicatif n'est pas défini (objectif et stack inconnus).
+Protocole en place : `AI_WORKFLOW.md` (checkpoints §5, reprise §10), `AGENTS.md`, `CLAUDE.md`, `.ai/*` dont `.ai/NEW_PROJECT.md`, `scripts/checkpoint.ps1`, `scripts/resume.ps1`. Aucun code, aucune stack, aucun projet actif.
 
 ## Completed
 
-- Analyse du dépôt (contenu initial : README, AI_HANDOFF.md, PROJECT_STATE.md, TODO.md).
-- Création du protocole commun et des fichiers de coordination.
-- Migration de l'ancien `AI_HANDOFF.md` / `TODO.md` vers `.ai/` (racine = renvois).
+- 2026-10-05 : protocole commun et fichiers de coordination (T-001).
+- 2026-10-10 : checkpoints continus, règle de reprise après interruption, procédure de nouveau projet, scripts (T-002).
 
 ## In progress
 
@@ -29,29 +28,28 @@ Rien.
 
 ## Files changed
 
-`AI_WORKFLOW.md`, `AGENTS.md`, `CLAUDE.md`, `.ai/HANDOFF.md`, `.ai/TASKS.md`, `.ai/DECISIONS.md`, `.ai/SESSION_LOG.md`, `.github/pull_request_template.md` (nouveaux) ; `AI_HANDOFF.md`, `TODO.md`, `PROJECT_STATE.md`, `README.md` (modifiés).
+`AI_WORKFLOW.md`, `README.md`, `PROJECT_STATE.md`, `.ai/HANDOFF.md`, `.ai/TASKS.md`, `.ai/DECISIONS.md`, `.ai/SESSION_LOG.md` (modifiés) ; `.ai/NEW_PROJECT.md`, `scripts/checkpoint.ps1`, `scripts/resume.ps1` (nouveaux).
 
 ## Tests performed
 
-Aucun test automatisé (pas de code). Relecture manuelle des liens entre fichiers ; vérification de l'absence de secrets par recherche de motifs.
+Aucun test automatisé. Les scripts PowerShell n'ont pas encore été exécutés dans un vrai relais (T-003) : **non vérifié**.
 
 ## Problems / blockers
 
-- Aucun script build/test/lint à documenter (pas de code).
-- Claude in Chrome non connecté pendant la mise en place : fichiers créés via clone local puis poussés.
-- Pas de `gh` CLI installé : Issues/PR à créer via l'interface web ou après installation de `gh`.
+- Pas de `gh` CLI : Issues/PR à créer via l'interface web.
+- Le push depuis cette machine dépend de l'authentification git de l'utilisateur : à vérifier.
 
 ## Decisions already made
 
-- `AI_WORKFLOW.md` = unique source des règles ; `AGENTS.md` et `CLAUDE.md` sont de courts renvois (voir `.ai/DECISIONS.md` D-001).
-- `.ai/HANDOFF.md` remplace l'ancien `AI_HANDOFF.md` racine.
+- `AI_WORKFLOW.md` = unique source des règles (D-001) ; handoff dans `.ai/` (D-002) ; checkpoints continus (D-003) ; dépôt sans projet prédéfini (D-004).
 
 ## Important context
 
-- Clone local de l'utilisateur : `C:\Users\PC\Documents\GitHub\Claude-Chatgpt` (Windows).
-- L'utilisateur parle français, veut des échanges courts et un avis franc (✅/⚠️/❌).
+- Clone local : `C:\Users\PC\Desktop\Claude-Chatgpt` (Windows).
+- L'utilisateur parle français, veut des échanges courts et un avis franc (✅/⚠️/❌), ne connaît pas la stack d'avance : recommander, ne pas demander.
+- Shopify/boutiques : hors périmètre de ce dépôt.
 - Ne jamais mettre de secrets dans le dépôt.
 
 ## EXACT NEXT ACTION
 
-Demander à l'utilisateur la nature du projet (objectif, stack). Puis renseigner `README.md`, `PROJECT_STATE.md` et la section 8 de `AI_WORKFLOW.md` (commandes build/test/lint), créer l'Issue du projet, et ajouter les tâches correspondantes dans `.ai/TASKS.md`.
+Attendre « nouveau projet : <description> » de l'utilisateur et suivre `.ai/NEW_PROJECT.md`. Si l'utilisateur veut d'abord valider le relais : T-003 (démarrer une petite tâche avec un agent, l'arrêter, la faire reprendre par l'autre, corriger le handoff selon ce qui manque).

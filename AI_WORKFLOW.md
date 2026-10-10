@@ -57,6 +57,12 @@ Avant de s'arrêter :
 4. Commit (`chore(ai): checkpoint handoff` si pertinent) et push.
 5. Question de contrôle : *« Si ma conversation disparaissait maintenant, un autre agent pourrait-il reprendre exactement à partir du dépôt ? »* Sinon, compléter le handoff.
 
+### Checkpoints continus (interruption brutale)
+
+Un agent peut s'arrêter sans prévenir (limite d'usage, coupure, fermeture). On ne peut donc PAS attendre la fin de session pour sauvegarder :
+- Après chaque étape significative (fichier terminé, test passé, décision prise) : mettre à jour `.ai/HANDOFF.md` (sections *In progress* et *EXACT NEXT ACTION*), puis lancer `scripts/checkpoint.ps1` (commit + push).
+- Ne jamais laisser plus d'une étape de travail non poussée.
+
 ## 6. Tests et validation
 
 Après toute modification de code : identifier et lancer les tests/lint/typecheck/build pertinents (voir section 8). Consigner dans HANDOFF.md les commandes réellement lancées et leur résultat, y compris les échecs.
@@ -70,12 +76,28 @@ Après toute modification de code : identifier et lancer les tests/lint/typechec
 
 ## 8. Commandes du projet (build / test / lint / typecheck)
 
-**Aucune à ce jour** : le dépôt ne contient pas encore de code ni de stack définie (voir `PROJECT_STATE.md`). Dès qu'une stack existe, lister ici les commandes exactes, et le noter dans `.ai/DECISIONS.md`.
+- Sauvegarder le travail en cours : `powershell -File scripts/checkpoint.ps1 -Agent "<Claude|ChatGPT>" -Message "<résumé>"`
+- Reprendre le travail de l'autre agent : `powershell -File scripts/resume.ps1`
+- Build / test / lint : aucun à ce jour (pas de projet actif). Dès qu'une stack existe, lister ici les commandes exactes et le noter dans `.ai/DECISIONS.md`.
 
 ## 9. ChatGPT Work et Claude Cowork
 
 Mêmes fichiers de coordination dès qu'un dépôt ou dossier synchronisé est disponible. Pour les tâches non techniques (documents, recherches, procédures, données), enregistrer dans le dépôt ce qui est nécessaire à la continuité. Sans accès au dépôt : produire un bloc de handoff au format de `.ai/HANDOFF.md` à coller dans le dépôt.
 
-## 10. Conventions héritées
+## 10. Reprise après interruption de l'autre agent
+
+Quand l'utilisateur dit « reprends » (à Claude ou à ChatGPT/Codex) :
+1. Lancer `scripts/resume.ps1` (ou `git fetch`, `git pull --ff-only`, `git status`, `git log --oneline -10`) et lire `.ai/HANDOFF.md`.
+2. Si le dernier commit est un `checkpoint:` ou si `git status` montre des changements non commités : c'est du travail inachevé de l'autre agent. Le relire (`git diff`), le conserver, le terminer. Ne pas le jeter.
+3. Si le handoff est en retard sur Git (commits plus récents que « Last known commit ») : Git fait foi, recoller le handoff.
+4. Reprendre à **EXACT NEXT ACTION**, sans redemander le contexte à l'utilisateur.
+
+Phrase type : « Lis AGENTS.md (ou CLAUDE.md) et reprends exactement où l'autre s'est arrêté. »
+
+## 10 bis. Nouveau projet
+
+Quand l'utilisateur dit « nouveau projet : <description> » : suivre `.ai/NEW_PROJECT.md`.
+
+## 11. Conventions héritées
 
 Fichiers antérieurs conservés : `PROJECT_STATE.md` (description du projet, toujours valable). `AI_HANDOFF.md` et `TODO.md` à la racine sont désormais de simples renvois vers `.ai/HANDOFF.md` et `.ai/TASKS.md` (leur contenu a été migré ; l'historique Git conserve les originaux).

@@ -5,8 +5,8 @@
 | ID | Description | État | Issue | Agent | Branche | Dépend de |
 |----|-------------|------|-------|-------|---------|-----------|
 | T-001 | Système de coordination multi-agents (protocole + `.ai/`) | DONE | - | Claude Code | main | - |
-| T-002 | Définir objectif et stack du projet ; compléter `README.md`, `PROJECT_STATE.md`, commandes build/test dans `AI_WORKFLOW.md` §8 | TODO | - | - | - | - |
-| T-003 | Squelette du projet une fois la stack choisie | TODO | - | - | - | T-002 |
+| T-002 | Relais Claude <-> ChatGPT : checkpoints continus, scripts de reprise, procédure « nouveau projet » (`.ai/NEW_PROJECT.md`) | DONE | - | Claude Code | main | T-001 |
+| T-003 | Tester un vrai relais : un agent démarre une tâche, l'autre la reprend ; corriger ce qui manque dans le handoff | TODO | - | - | - | T-002 |
 
 ## Historique condensé
 
