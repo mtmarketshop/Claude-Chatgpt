@@ -2,16 +2,16 @@
 
 Last updated: 2026-10-10
 Agent : Codex — reprise du relais de Claude Code (Sonnet 5.5)
-Current task: T-004 — Exploitation e-commerce MTMarketShop (relais)
+Current task: T-005 — Audit de conformité des boutiques avec Shopify (lecture seule, partiel)
 Current branch: chore/t-004-relais-claude
 Base branch: main
-Last known commit: 7b81d7e (relais Claude reçu) ; voir git log pour le checkpoint de reprise
+Last known commit: 799029e avant le checkpoint d'audit ; voir git log pour le checkpoint courant
 GitHub issue / Pull request: none
 
 ## Objective
 Suivre MTMarketShop (Shopify maître + 4Seller vers eBay, TikTok Shop, Temu) sans perte de contexte entre agents.
 
-## Current state (2026-10-10, tout en lecture seule, rien modifié par Claude)
+## Observations historiques de Claude (2026-10-10, lecture seule)
 - Shopify (mtmarketshop.com, plan Basic, EUR) et 4Seller (session Chrome de l'utilisateur) : connectés et fonctionnels.
 - Stocks Shopify / 4Seller / eBay / TikTok cohérents (logiciels DIAG 20, AutoCom 2021 = 18, VCDS 25.3 = 19 ; physiques identiques). Synchro stock 4Seller : 42 réussies, 0 échec sur 24 h.
 - eBay : 14 en vente (8 logiciels DIAG-*-COURRIER + écouteurs, tondeuse, survêtement, ventilateur, lunettes), 2 inactives. Astuce : la liste « En vente » plante si on arrive dessus directement ; cliquer Inactif puis En vente.
@@ -33,7 +33,7 @@ D-003 laisser les 8 fiches Shopify telles quelles ; D-004 annonces TikTok conser
 - Français simple ; réponses courtes ; terminer par « À faire : … Pourquoi : … » + choix numérotés (1 recommandé, 2 alternative, 3 arrêter). L'utilisateur veut écrire le moins possible.
 - Avant toute correction de stock : AFFICHER AVANT/APRÈS et attendre validation. Aucun secret dans Git.
 
-## EXACT NEXT ACTION
+## Actions historiques de suivi (toujours valables, sans automatisation)
 1. Expéditions à faire par l'utilisateur : 2 commandes eBay (AutoCom 2021 ; AutoCom 2021 + VCDS 25.3) avant le 2026-10-13 ; 1 commande TikTok ES (ECO-004 jaune) avant le 2026-10-14 (Chronopost). L'utilisateur confirme avoir la pièce.
 2. Le 2026-10-12 : contrôle TikTok en lecture seule (4Seller > Produits > TikTok : compteurs En vente / Vérification > onglet Gelé). Si de nouvelles annonces sont gelées, proposer la dépublication groupée sur TikTok des logiciels (accord de l'utilisateur obligatoire). Pas de rappel programmé : l'utilisateur doit le demander (« contrôle TikTok »).
 3. Sinon attendre la demande de l'utilisateur. Aucune modification Shopify/4Seller/eBay/TikTok, aucun merge ni déploiement sans accord explicite.
@@ -43,3 +43,21 @@ Relais de Claude lu et comparé à Git : fetch réussi, branche propre et synchr
 
 ## Vérification de reprise — 2026-10-10
 À la demande explicite de reprise sur chore/t-004-relais-claude : fetch réussi, HEAD 2f81d53 synchronisé, aucun nouveau commit de Claude. EXACT NEXT ACTION inchangée : expéditions par l'utilisateur, contrôle TikTok le 12 octobre sur demande, sinon attente. Aucune intervention externe.
+
+## Audit demandé par l'utilisateur — 2026-10-10
+- Rapport : `.ai/AUDIT_BOUTIQUES_2026-10-10.md`. Source Shopify : 13 produits lus par le connecteur ; copies Shopify 4Seller : 13/13 conformes (titres, SKU/prix, texte normalisé, URL/ordre des photos).
+- eBay : 14/14 actives lues ; prix et texte des descriptions conformes ; 2 titres de lunettes différents ; photos réhébergées à certifier visuellement.
+- TikTok : 167 annonces recensées, 116 détails confirmés. Correction du précédent relais : les 167 incluent les produits physiques ; DE n'a que 8 diagnostics, BE 8 diagnostics + survêtement, GR 20 annonces avec 7 anciens diagnostics supplémentaires. Les 10 autres boutiques ont chacune 13 annonces.
+- TikTok FR : les 13 titres et prix par SKU correspondent. Écouteurs : galerie principale 9 contre 12 Shopify, mais les 12 variantes ont leurs images. Anciennes GR : 5 variantes NUM supplémentaires absentes de Shopify (voir IDs dans rapport).
+- Temu : 0 active, 4 inactives suspendues ; titres correspondants ; prix catalogue 11,98 / 10,65–22,64 / 26,63 / 47,94 EUR supérieurs à Shopify.
+- Descriptions TikTok : éditeur vide malgré compteur non nul ; ne pas conclure à une description publiée vide. Aperçu public testé en erreur 502. Descriptions/galeries Temu et images eBay/TikTok non entièrement certifiées.
+- 16 boutiques autorisées affichées actives. Copie Shopify affiche un avertissement de réautorisation pour canaux/marchés ; rien réautorisé. Catalogue central et synchro des prix affichent Aucune donnée. Flux Google/Meta non comparés.
+- Aucun changement externe, aucune commande expédiée, aucune automatisation. D-003 à D-006 maintenues. Pas de code changé.
+- Git : fetch réussi, branche propre au démarrage à 799029e ; vérification documentaire par git diff --check avant checkpoint.
+- Blocage : reconnexion Chrome confirmée par l'utilisateur, puis nouvel onglet fonctionnel pour 11 lectures ; ensuite commandes de consultation à nouveau bloquées page 2. Détails restants : 51. Une Issue GitHub n'a pas été créée : gh indisponible.
+
+## EXACT NEXT ACTION
+1. Reprendre T-005 en lecture seule : lire le rapport puis 4Seller > TikTok > Publié > En vente, toutes boutiques, 100/page, page 2. Vérifier que l'ordre n'a pas changé. Indices déjà lus (base zéro) : 0–10, 21, 22, 43, 44, 53. Restent 11–20, 23–42, 45–52, 54–66. Si les anciens onglets ne répondent plus, ouvrir un nouvel onglet depuis la même session Chrome.
+2. Obtenir une lecture réelle des descriptions TikTok (interface vendeur si accessible), des descriptions/galeries Temu, puis certifier visuellement les photos eBay/TikTok et vérifier les flux Google/Meta accessibles. Ne pas affirmer une conformité complète avec des champs illisibles.
+3. Aucun clic Synchroniser / Mettre à jour / Réautoriser / Supprimer / Désactiver. Shopify reste inchangé ; toute correction doit avoir un avant/après concret puis une validation.
+4. Conserver les expéditions à faire par l'utilisateur et le contrôle TikTok du 12 octobre sur demande décrits plus haut.

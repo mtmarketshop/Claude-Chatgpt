@@ -31,3 +31,8 @@ Uniquement les décisions importantes, susceptibles d'être rediscutées.
 - Contexte : 52 annonces des 8 logiciels gelées par TikTok le 2026-10-07 (« Unsupported product »). Les 167 annonces actives du 2026-10-10 sont les mêmes produits avec titres reformulés (« compatible Delphi/WOW/... »).
 - Décision de l'utilisateur : garder les annonces 48 h et surveiller, sans modifier.
 - Suite : contrôle en lecture seule le 2026-10-12 (4Seller > TikTok : compteurs En vente / Vérification > Gelé). Si de nouvelles annonces sont gelées, proposer la dépublication groupée sur TikTok (accord de l'utilisateur requis). Prévient aussi l'utilisateur que le risque porte sur tout le compte TikTok.
+
+## Rectification des constats D-004 / D-006 — 2026-10-10 — Audit Codex
+- Le recensement complet des 167 lignes TikTok montre aussi les 5 familles physiques, des déclinaisons pays et 7 anciennes annonces GR supplémentaires. L'affirmation historique « 167 annonces des seuls 8 logiciels » est incorrecte.
+- Cela ne change pas les décisions de conservation et de lecture seule prises par l'utilisateur.
+- Détails et limites dans `.ai/AUDIT_BOUTIQUES_2026-10-10.md` ; aucune suppression/correction effectuée.

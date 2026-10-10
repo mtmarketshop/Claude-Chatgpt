@@ -24,3 +24,14 @@
 - Suivi e-commerce : en attente de la prochaine demande ; contrôle TikTok prévu le 2026-10-12, sans automatisation.
 - Expéditions restant à confirmer par l'utilisateur : deux eBay avant le 13 octobre et une TikTok ES avant le 14 octobre, selon les observations de Claude.
 - Nouvelle vérification du relais : aucun nouveau travail Claude après 2f81d53 ; prochaines actions inchangées.
+
+## T-005 — Comparer toutes les boutiques et le connecteur à Shopify
+- État : BLOCKED (audit partiel documenté ; consultation restante et champs non accessibles).
+- Agent : Codex. Branche : chore/t-004-relais-claude, continuité du relais e-commerce demandé.
+- Lecture seule ; aucune correction ni réautorisation de connecteur autorisée.
+- Rapport : `.ai/AUDIT_BOUTIQUES_2026-10-10.md`.
+- Fait : 13 produits Shopify, 13 copies Shopify 4Seller, 14 annonces eBay actives, 167 lignes TikTok et 116 fiches détaillées, 4 lignes Temu inactives ; 16 boutiques autorisées recensées.
+- Écarts : titres lunettes eBay, galerie écouteurs TikTok 9/12, couverture DE/BE, 7 anciens doublons GR dont 5 variantes NUM supplémentaires, prix catalogue Temu supérieurs.
+- Restent : 51 détails TikTok (indices dans HANDOFF), descriptions TikTok/Temu, galeries Temu, identité visuelle/ordre eBay/TikTok, flux Google/Meta et rendu public final. Anciennes inactives eBay non entièrement comparées.
+- Cause : Chrome reconnecté mais interactions fragiles/bloquées ; descriptions TikTok illisibles et aperçu public 502 ; contenu complet Temu non accessible par la liste.
+- Critère de réussite : un statut vérifié ou explicitement non vérifiable pour chaque champ et chaque canal, sans modification externe. Ne pas marquer DONE tant que les contrôles restants restent possibles mais non réalisés.

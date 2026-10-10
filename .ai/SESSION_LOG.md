@@ -39,3 +39,12 @@
 - Fetch réussi ; branche demandée synchronisée à 2f81d53. Aucun nouveau commit de Claude.
 - Protocole et relais relus ; étapes : expéditions par utilisateur, contrôle TikTok le 12 octobre sur demande, sinon attente. Aucune écriture sur les plateformes ni automatisation.
 - Documentation seule ; git diff --check validé avant commit.
+
+## 2026-10-10 — Codex — Audit Shopify / 4Seller / boutiques
+- Demande : vérifier titres, prix, descriptions et photos de toutes les boutiques avec Shopify, sans modification.
+- Sources lues : 13 produits Shopify via connecteur, 13 copies Shopify 4Seller, 14 fiches eBay actives, 167 lignes TikTok dont 116 fiches détaillées, 4 fiches Temu inactives en liste, 16 boutiques autorisées.
+- Résultats : copie Shopify conforme ; eBay prix/texte conformes et 2 titres lunettes différents ; TikTok couverture DE/BE différente, 7 anciennes annonces GR dont 5 SKU NUM supplémentaires, galerie écouteurs FR 9 contre 12 Shopify ; prix catalogue Temu supérieurs.
+- Limites : descriptions TikTok illisibles malgré compteur, aperçu public 502, descriptions/galeries Temu non accessibles, identité des images réhébergées non certifiée, flux Google/Meta non comparés. 51 détails TikTok restants.
+- Incident : déconnexion Chrome ; utilisateur a confirmé la reconnexion ; nouvel onglet fonctionnel permettant 11 détails supplémentaires, puis blocage des commandes de consultation sur page 2. Rapport et reprise exacte enregistrés.
+- Git : fetch réussi avant documentation, HEAD 799029e et branche propre ; gh indisponible pour Issue. Aucun code modifié ni test applicatif requis ; git diff --check avant checkpoint.
+- Aucune écriture Shopify/4Seller/eBay/TikTok/Temu, aucune réautorisation, aucun envoi externe ni automatisation.
