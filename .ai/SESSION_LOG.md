@@ -59,3 +59,10 @@
 - L'utilisateur choisit « 1 » (connexion réactivée). Inventaire navigateur puis ouverture directe Chrome vers 4Seller expirés, environ 30 s chacun.
 - Aucun nouveau contrôle produit ni changement externe. Fetch réussi, branche propre synchronisée à d106509.
 - Suite proposée : redémarrage manuel Chrome et Codex, reconnexion de l'extension, puis reprise au point enregistré. Documentation seule ; git diff --check avant checkpoint.
+
+## 2026-10-10 — Codex — Reprise à 149 détails et préférence navigateur
+- Lecture seule reprise dans Chrome : 33 détails TikTok supplémentaires confirmés (indices page 2 : 11–20, 23–42, 45–47), audit à 149/167. Compteurs actuels 167 en vente / 382 supprimées / 52 en vérification.
+- Écouteurs, ventilateurs et tondeuses : toutes les déclinaisons actives lues ; SKU/prix EUR conformes, titres étrangers traduits, prix locaux relevés. Galeries principales respectivement 9, 4, 4 ; écouteurs 12 images de variantes. Lunettes CZ/AT et survêtement CZ également lus.
+- Descriptions TikTok toujours placeholder, aucun constat de description publiée vide. Photos réhébergées non certifiées visuellement. Le rapport conserve les limites de Temu/Google/Meta.
+- L'utilisateur demande d'arrêter les pages Chrome devant ses pages : interactions Chrome arrêtées immédiatement. Préférence conservée pour la reprise par connecteurs ou arrière-plan réel. Un seul projet, aucune modification des boutiques.
+- Fetch réussi, Git propre à 6d04939 avant documentation ; git diff --check avant checkpoint. Aucun code changé.

@@ -37,3 +37,5 @@
 - Tentative suivante après choix utilisateur « 1 » : navigateur entièrement non répondant (2 inventaires et ouverture d'un onglet expirés). Reconnexion demandée ; aucun détail supplémentaire lu. Branche vérifiée à 5236dd1.
 - Critère de réussite : un statut vérifié ou explicitement non vérifiable pour chaque champ et chaque canal, sans modification externe. Ne pas marquer DONE tant que les contrôles restants restent possibles mais non réalisés.
 - Nouvelle confirmation utilisateur de reconnexion : inventaire et ouverture directe Chrome toujours expirés. Couverture inchangée. Redémarrage manuel Chrome/Codex à proposer avant une autre tentative identique.
+- Dernière reprise : Chrome fonctionnel, 33 détails supplémentaires confirmés ; couverture courante 149/167. Restent page 2 indices 48–52, 54–66 (18), descriptions TikTok/Temu, galeries Temu, comparaison visuelle et flux Google/Meta.
+- Contrainte utilisateur prioritaire : ne plus ouvrir/manipuler Chrome devant ses pages. Arrêt immédiat des interactions ; prochaine reprise par connecteur ou accès réellement en arrière-plan. Aucune nouvelle autorisation de correction ni création de projet.

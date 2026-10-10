@@ -5,7 +5,7 @@ Agent : Codex — reprise du relais de Claude Code (Sonnet 5.5)
 Current task: T-005 — Audit de conformité des boutiques avec Shopify (lecture seule, partiel)
 Current branch: chore/t-004-relais-claude
 Base branch: main
-Last known commit: 5236dd1 avant le checkpoint de tentative de reprise ; voir git log pour le checkpoint courant
+Last known commit: 6d04939 avant le checkpoint de reprise à 149 détails ; voir git log pour le checkpoint courant
 GitHub issue / Pull request: none
 
 ## Objective
@@ -57,9 +57,18 @@ Relais de Claude lu et comparé à Git : fetch réussi, branche propre et synchr
 - Blocage : reconnexion Chrome confirmée par l'utilisateur, puis nouvel onglet fonctionnel pour 11 lectures ; ensuite commandes de consultation à nouveau bloquées page 2. Détails restants : 51. Une Issue GitHub n'a pas été créée : gh indisponible.
 
 ## EXACT NEXT ACTION
+**État courant prioritaire (10 octobre, dernière instruction utilisateur)** : 149/167 détails TikTok confirmés. Ne plus manipuler Chrome en passant devant les pages de l'utilisateur. Reprise autorisée en lecture seule, uniquement avec connecteur ou accès réellement en arrière-plan. Pas de nouveau projet. Restent page 2 indices 48–52 et 54–66 (18 fiches), après vérification des ID. Toutes les fiches écouteurs, ventilateurs et tondeuses sont désormais lues ; reste surtout lunettes/survêtements. Voir section de reprise à la fin du rapport pour les 33 lectures et prix locaux. Les étapes historiques suivantes ne doivent pas relancer Chrome au premier plan.
+
 Reconnexion confirmée à nouveau par l'utilisateur : l'inventaire navigateur et l'ouverture directe de 4Seller ont encore expiré (environ 30 s chacun). Aucun nouveau contrôle. Avant une nouvelle tentative, proposer de fermer/réouvrir Chrome et Codex, puis reconnecter l'extension ; ne pas répéter seulement « connexion réactivée ». Point Git vérifié : d106509 ; audit toujours 116/167.
 0. Dernière tentative de reprise autorisée par le choix « 1 » : fetch réussi, branche synchronisée à 5236dd1. Deux inventaires navigateur et une ouverture directe de nouvel onglet Chrome ont expiré. Aucun nouvel accès aux fiches. L'utilisateur doit réactiver la connexion de l'extension Codex à Chrome ; question envoyée. Aucun outil de lecture direct TikTok/Temu/eBay/4Seller disponible dans cette session. Le décompte reste 116/167, aucun changement externe.
 1. Reprendre T-005 en lecture seule : lire le rapport puis 4Seller > TikTok > Publié > En vente, toutes boutiques, 100/page, page 2. Vérifier que l'ordre n'a pas changé. Indices déjà lus (base zéro) : 0–10, 21, 22, 43, 44, 53. Restent 11–20, 23–42, 45–52, 54–66. Si les anciens onglets ne répondent plus, ouvrir un nouvel onglet depuis la même session Chrome.
 2. Obtenir une lecture réelle des descriptions TikTok (interface vendeur si accessible), des descriptions/galeries Temu, puis certifier visuellement les photos eBay/TikTok et vérifier les flux Google/Meta accessibles. Ne pas affirmer une conformité complète avec des champs illisibles.
 3. Aucun clic Synchroniser / Mettre à jour / Réautoriser / Supprimer / Désactiver. Shopify reste inchangé ; toute correction doit avoir un avant/après concret puis une validation.
 4. Conserver les expéditions à faire par l'utilisateur et le contrôle TikTok du 12 octobre sur demande décrits plus haut.
+
+## Dernière reprise — Chrome fonctionnel puis arrêté à la demande utilisateur
+- Git fetch réussi, branche propre à 6d04939 au démarrage. 33 détails supplémentaires confirmés, audit à 149/167 ; aucune modification des boutiques.
+- Compteurs 4Seller recontrôlés : 167 en vente, 382 supprimées, 52 en vérification. Écouteurs : 9 photos principales partout, 12 variantes illustrées ; ventilateurs/tondeuses : 4 photos principales partout. Prix EUR conformes par SKU, prix locaux relevés dans le rapport.
+- Descriptions TikTok toujours non lisibles ; galeries réhébergées non certifiées visuellement. Restent aussi les champs Temu et flux Google/Meta du rapport.
+- L'utilisateur demande « arrête d'ouvrir les pages Chrome par dessus les miennes ». Arrêt des manipulations Chrome immédiat, aucune nouvelle ouverture Chrome à effectuer au premier plan. Préférer connecteurs/arrière-plan sans modifier l'authentification ni les paramètres du navigateur.
+- Documentation seulement : git diff --check avant checkpoint ; pas de tests applicatifs.

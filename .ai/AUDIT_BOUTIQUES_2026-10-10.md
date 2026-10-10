@@ -12,7 +12,7 @@ Un connecteur actif ne prouve pas que chaque contenu est synchronisé ni publié
 |---|---|---|
 | Shopify → copie Shopify dans 4Seller | 13/13 fiches | Titres, SKU/prix, texte des descriptions normalisé et URL/ordre des photos identiques |
 | eBay dans 4Seller | 14/14 annonces actives | Prix et texte des descriptions conformes ; 12 titres identiques, 2 titres de lunettes différents ; galeries à certifier visuellement |
-| TikTok dans 4Seller | Liste complète 167/167 ; détails 116/167 | Écarts de langue, couverture, photos et variantes ; descriptions illisibles dans l'éditeur |
+| TikTok dans 4Seller | Liste complète 167/167 ; détails 149/167 | Écarts de langue, couverture, photos et variantes ; descriptions illisibles dans l'éditeur |
 | Temu dans 4Seller | 0 active ; liste des 4 inactives suspendues | Titres identiques ; prix catalogue supérieurs ; description et galerie complète non accessibles |
 
 Les données eBay/TikTok/Temu ci-dessous proviennent des copies de fiches dans 4Seller. Elles ne certifient pas le rendu final sur les pages clients, les remises, frais de livraison ou prix au paiement.
@@ -133,9 +133,9 @@ Ventilateur et diagnostics absents des 4 fiches inactives.
 
 ## Reprise exacte et contrôles restant à faire
 
-Détails TikTok confirmés : 116/167 = les 100 de la page 1 + 16 de la page 2.
-Page 2 déjà lue, indices à partir de zéro : 0–10, 21, 22, 43, 44, 53.
-Page 2 restant à lire : **11–20, 23–42, 45–52, 54–66** (51 fiches).
+Détails TikTok confirmés : 149/167 = les 100 de la page 1 + 49 de la page 2.
+Page 2 déjà lue, indices à partir de zéro : 0–47, 53.
+Page 2 restant à lire : **48–52, 54–66** (18 fiches).
 Ordre constaté pendant cette session ; vérifier les ID avant reprise si le tri change.
 
 Navigation : Produits > TikTok > Publié > En vente ; toutes les boutiques ; 100/page ; page 2.
@@ -151,4 +151,18 @@ Restent également :
 5. Les 2 inactives eBay si l'utilisateur veut également comparer les anciennes annonces.
 
 Les décisions D-003 à D-006 sont conservées. Toute proposition de correction doit d'abord montrer l'avant/après ; aucune correction autorisée par cet audit.
+
+## Reprise du 10 octobre — 33 détails supplémentaires confirmés
+
+Lecture supplémentaire : écouteurs AT/HU/PT/NL/PL/GR/CZ/IE/IT/ES ; ventilateurs et tondeuses dans ces dix pays ; survêtement CZ et lunettes CZ/AT. Les fiches FR avaient déjà été lues. Le tri a changé sur les diagnostics ; les ID des produits physiques ont été vérifiés. Une lecture intermédiaire ES a d'abord reçu un mauvais indice dans la sortie : son URL 865774961003 et sa boutique confirment ECO ES, indice 20. La fiche PL indice 15 a ensuite été relue séparément (865775381003).
+
+- Écouteurs : dans les 11 boutiques qui les proposent, 12 SKU, chaque variante possède une image ; galerie principale 9 photos. Tous les SKU coûtent 8,99 EUR dans les pays en EUR, 39,42 PLN en PL, 219,76 CZK en CZ, 3 313 HUF en HU.
+- Ventilateurs : 4 SKU et 4 photos principales dans les 11 boutiques. LAM-004/003 = 23,99 EUR et LAM-002/001 = 24,99 EUR ; respectivement 105,19/109,57 PLN, 586,45/610,89 CZK, 8 841/9 210 HUF.
+- Tondeuses : 4 SKU et 4 photos principales dans les 11 boutiques. TON-001/002 = 7,99 EUR, TON-003 = 12,99 EUR, TON-004 = 16,99 EUR ; PL 35,03/56,96/74,50 ; CZ 195,32/317,55/415,33 ; HU 2 945/4 787/6 261. Conversion attendue non vérifiée.
+- Lunettes CZ : 2 SKU, 488,66 CZK chacun, 2 photos principales. AT : 2 SKU à 19,99 EUR chacun et 2 photos principales.
+- Survêtement CZ : 5 tailles à 879,79 CZK chacune, 3 photos principales.
+- Titres étrangers effectivement traduits (ex. AT écouteurs « Kabelgebundene Gaming-Kopfhörer mit Mikrofon »). L'égalité littérale avec Shopify français n'est pas présente. Les champs réels ont été lus pour éviter la traduction automatique de Chrome.
+- Les nouveaux éditeurs de description présentent toujours uniquement le placeholder : contenu publié non vérifiable par cet écran. Nombre de photos vérifié, identité visuelle/ordre avec Shopify non certifiés.
+
+L'utilisateur a demandé de ne plus ouvrir les pages Chrome devant ses propres pages. Manipulations Chrome arrêtées immédiatement ; continuer seulement par un connecteur ou une consultation réellement en arrière-plan. Aucun changement externe ni nouveau projet.
 
