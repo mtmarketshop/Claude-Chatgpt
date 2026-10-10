@@ -1,11 +1,11 @@
 # AI HANDOFF
 
 Last updated: 2026-10-10
-Agent sortant : Claude Code (Sonnet 5.5) → agent entrant : ChatGPT / Codex
+Agent : Codex — reprise du relais de Claude Code (Sonnet 5.5)
 Current task: T-004 — Exploitation e-commerce MTMarketShop (relais)
 Current branch: chore/t-004-relais-claude
 Base branch: main
-Last known commit: voir `git log` (commit de relais `chore(ai): checkpoint handoff`)
+Last known commit: 7b81d7e (relais Claude reçu) ; voir git log pour le checkpoint de reprise
 GitHub issue / Pull request: none
 
 ## Objective
@@ -37,3 +37,7 @@ D-003 laisser les 8 fiches Shopify telles quelles ; D-004 annonces TikTok conser
 1. Expéditions à faire par l'utilisateur : 2 commandes eBay (AutoCom 2021 ; AutoCom 2021 + VCDS 25.3) avant le 2026-10-13 ; 1 commande TikTok ES (ECO-004 jaune) avant le 2026-10-14 (Chronopost). L'utilisateur confirme avoir la pièce.
 2. Le 2026-10-12 : contrôle TikTok en lecture seule (4Seller > Produits > TikTok : compteurs En vente / Vérification > onglet Gelé). Si de nouvelles annonces sont gelées, proposer la dépublication groupée sur TikTok des logiciels (accord de l'utilisateur obligatoire). Pas de rappel programmé : l'utilisateur doit le demander (« contrôle TikTok »).
 3. Sinon attendre la demande de l'utilisateur. Aucune modification Shopify/4Seller/eBay/TikTok, aucun merge ni déploiement sans accord explicite.
+
+## Reprise Codex — 2026-10-10
+Relais de Claude lu et comparé à Git : fetch réussi, branche propre et synchronisée au commit 7b81d7e. Constats de Claude conservés comme observations antérieures, sans nouvelle vérification des plateformes. Aucun changement externe. Contrôle du 12 octobre non anticipé ; aucune automatisation créée. git diff --check effectué avant checkpoint ; pas de code changé.
+

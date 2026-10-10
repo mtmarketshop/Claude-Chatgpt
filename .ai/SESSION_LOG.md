@@ -29,3 +29,8 @@
 - TikTok « Vérification 52 » = 52 annonces GELÉES par TikTok (les 8 logiciels, créées le 2026-10-03, gelées le 2026-10-07) pour « Unsupported product » (Restricted and Unsupported Product Guidelines, détection automatique) : invisibles et non modifiables. Les 167 annonces actives du 2026-10-10 sont les mêmes produits avec des titres reformulés ; risque élevé de gel identique et de sanction du compte. Rien modifié. Décision D-004 inchangée, à reconfirmer par l'utilisateur.
 - Décision D-006 : garder 48 h et surveiller. Contrôle prévu 2026-10-12. Aussi à faire avant le 13/14 oct : expédier 2 commandes eBay (DIAG) et 1 TikTok ES (ECO-004).
 - Relais à ChatGPT/Codex demandé par l'utilisateur. HANDOFF réécrit (état, décisions D-003..D-006, EXACT NEXT ACTION).
+
+## 2026-10-10 — Codex — Reprise après Claude
+- HANDOFF, TASKS, DECISIONS, SESSION_LOG et protocole lus. Git fetch réussi ; branche chore/t-004-relais-claude propre et synchronisée sur 7b81d7e.
+- Décisions D-003 à D-006 conservées. Aucun changement Shopify/4Seller/eBay/TikTok ; aucune nouvelle vérification des plateformes ni automatisation.
+- Prochaine action : expéditions à faire par l'utilisateur ; contrôle TikTok en lecture seule le 12 octobre sur demande. Pas de code changé ; git diff --check avant checkpoint.
