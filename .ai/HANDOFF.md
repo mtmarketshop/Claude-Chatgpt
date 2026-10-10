@@ -72,3 +72,9 @@ Reconnexion confirmée à nouveau par l'utilisateur : l'inventaire navigateur et
 - Descriptions TikTok toujours non lisibles ; galeries réhébergées non certifiées visuellement. Restent aussi les champs Temu et flux Google/Meta du rapport.
 - L'utilisateur demande « arrête d'ouvrir les pages Chrome par dessus les miennes ». Arrêt des manipulations Chrome immédiat, aucune nouvelle ouverture Chrome à effectuer au premier plan. Préférer connecteurs/arrière-plan sans modifier l'authentification ni les paramètres du navigateur.
 - Documentation seulement : git diff --check avant checkpoint ; pas de tests applicatifs.
+
+## Reprise en arrière-plan — 2026-10-10
+- Instruction : continuer sans interrompre les pages Chrome. Capacités Chrome vérifiées : aucun mode de visibilité/caché disponible ; aucun onglet Chrome ouvert ni interaction au premier plan.
+- Alternative testée : navigateur intégré Codex créé avec visible=false. 4Seller redirige vers sa page publique : session séparée non connectée. Page de connexion préparée dans ce navigateur masqué, conservée pour reprise ; aucune donnée d'authentification saisie.
+- Action nécessaire : connexion manuelle de l'utilisateur à 4Seller dans le navigateur intégré Codex, puis masquer ce navigateur et poursuivre les 18 détails restants en lecture seule. Aucun secret transféré depuis Chrome.
+- Audit inchangé : 149/167. Git fetch réussi, branche propre à d7304a2 avant documentation ; git diff --check effectué avant checkpoint.

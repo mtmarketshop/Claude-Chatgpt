@@ -39,3 +39,9 @@
 - Nouvelle confirmation utilisateur de reconnexion : inventaire et ouverture directe Chrome toujours expirés. Couverture inchangée. Redémarrage manuel Chrome/Codex à proposer avant une autre tentative identique.
 - Dernière reprise : Chrome fonctionnel, 33 détails supplémentaires confirmés ; couverture courante 149/167. Restent page 2 indices 48–52, 54–66 (18), descriptions TikTok/Temu, galeries Temu, comparaison visuelle et flux Google/Meta.
 - Contrainte utilisateur prioritaire : ne plus ouvrir/manipuler Chrome devant ses pages. Arrêt immédiat des interactions ; prochaine reprise par connecteur ou accès réellement en arrière-plan. Aucune nouvelle autorisation de correction ni création de projet.
+
+## Reprise en arrière-plan — 2026-10-10
+- Instruction : continuer sans interrompre les pages Chrome. Capacités Chrome vérifiées : aucun mode de visibilité/caché disponible ; aucun onglet Chrome ouvert ni interaction au premier plan.
+- Alternative testée : navigateur intégré Codex créé avec visible=false. 4Seller redirige vers sa page publique : session séparée non connectée. Page de connexion préparée dans ce navigateur masqué, conservée pour reprise ; aucune donnée d'authentification saisie.
+- Action nécessaire : connexion manuelle de l'utilisateur à 4Seller dans le navigateur intégré Codex, puis masquer ce navigateur et poursuivre les 18 détails restants en lecture seule. Aucun secret transféré depuis Chrome.
+- Audit inchangé : 149/167. Git fetch réussi, branche propre à d7304a2 avant documentation ; git diff --check effectué avant checkpoint.

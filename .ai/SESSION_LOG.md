@@ -66,3 +66,9 @@
 - Descriptions TikTok toujours placeholder, aucun constat de description publiée vide. Photos réhébergées non certifiées visuellement. Le rapport conserve les limites de Temu/Google/Meta.
 - L'utilisateur demande d'arrêter les pages Chrome devant ses pages : interactions Chrome arrêtées immédiatement. Préférence conservée pour la reprise par connecteurs ou arrière-plan réel. Un seul projet, aucune modification des boutiques.
 - Fetch réussi, Git propre à 6d04939 avant documentation ; git diff --check avant checkpoint. Aucun code changé.
+
+## Reprise en arrière-plan — 2026-10-10
+- Instruction : continuer sans interrompre les pages Chrome. Capacités Chrome vérifiées : aucun mode de visibilité/caché disponible ; aucun onglet Chrome ouvert ni interaction au premier plan.
+- Alternative testée : navigateur intégré Codex créé avec visible=false. 4Seller redirige vers sa page publique : session séparée non connectée. Page de connexion préparée dans ce navigateur masqué, conservée pour reprise ; aucune donnée d'authentification saisie.
+- Action nécessaire : connexion manuelle de l'utilisateur à 4Seller dans le navigateur intégré Codex, puis masquer ce navigateur et poursuivre les 18 détails restants en lecture seule. Aucun secret transféré depuis Chrome.
+- Audit inchangé : 149/167. Git fetch réussi, branche propre à d7304a2 avant documentation ; git diff --check effectué avant checkpoint.
