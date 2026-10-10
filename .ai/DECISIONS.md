@@ -21,3 +21,8 @@ Uniquement les décisions importantes, susceptibles d'être rediscutées.
 - Constat (4Seller, lecture seule) : 167 annonces TikTok en vente (52 en vérification), créées/publiées le 2026-10-10 entre 00h13 et 01h53, pour les 8 logiciels (Delphi 2017/2020/2021, AutoCom 2020/2021, WOW 5.00.08/5.00.12, VCDS 25.3) dans ~13 boutiques TikTok, 6,99–8,99 EUR, stock 18–20. Auteur de la création non identifié.
 - Décision de l'utilisateur : les garder publiées telles quelles. Risque connu : licence/contrefaçon signalé par 4Seller, retrait ou sanction TikTok possible.
 - Conséquences : aucune dépublication ni modification sans nouvel accord. Ces produits sont des logiciels numériques : le stock reste géré dans Shopify.
+
+## D-005 — 2026-10-10 — Shopify reste la référence de stock
+- Constat (4Seller, lecture seule) : la synchro de stock fonctionne (42 réussies / 0 échec / 0 échec de déduction sur 24 h). Les stocks sont propagés depuis le module Inventaire de 4Seller vers eBay, TikTok, Temu ; Shopify affiche les mêmes valeurs (mécanisme non confirmé). Les commandes eBay/TikTok ne sont pas recréées dans Shopify (dernière = #1662).
+- Décision de l'utilisateur : Shopify reste la référence. Écart de stock = corriger 4Seller et les canaux pour s'aligner sur Shopify, jamais l'inverse, avec AVANT/APRÈS et validation avant toute correction.
+- Conséquences : surveiller les écarts Shopify / 4Seller / canaux ; aucune écriture sans accord.
