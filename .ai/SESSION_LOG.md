@@ -54,3 +54,8 @@
 - Protocole, rapport et relais relus ; fetch réussi, branche propre et synchronisée à 5236dd1.
 - Navigateur non répondant : deux tentatives d'inventaire et une ouverture directe d'onglet Chrome expirées. Aucun outil de lecture direct disponible pour les marketplaces/4Seller ; demande de reconnexion adressée à l'utilisateur.
 - Aucun nouveau contrôle produit, couverture inchangée 116/167 TikTok. Aucune modification externe. Documentation seule, git diff --check avant checkpoint.
+
+## 2026-10-10 — Codex — Reconnexion confirmée, accès toujours bloqué
+- L'utilisateur choisit « 1 » (connexion réactivée). Inventaire navigateur puis ouverture directe Chrome vers 4Seller expirés, environ 30 s chacun.
+- Aucun nouveau contrôle produit ni changement externe. Fetch réussi, branche propre synchronisée à d106509.
+- Suite proposée : redémarrage manuel Chrome et Codex, reconnexion de l'extension, puis reprise au point enregistré. Documentation seule ; git diff --check avant checkpoint.

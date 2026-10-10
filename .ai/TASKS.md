@@ -36,3 +36,4 @@
 - Cause : Chrome reconnecté mais interactions fragiles/bloquées ; descriptions TikTok illisibles et aperçu public 502 ; contenu complet Temu non accessible par la liste.
 - Tentative suivante après choix utilisateur « 1 » : navigateur entièrement non répondant (2 inventaires et ouverture d'un onglet expirés). Reconnexion demandée ; aucun détail supplémentaire lu. Branche vérifiée à 5236dd1.
 - Critère de réussite : un statut vérifié ou explicitement non vérifiable pour chaque champ et chaque canal, sans modification externe. Ne pas marquer DONE tant que les contrôles restants restent possibles mais non réalisés.
+- Nouvelle confirmation utilisateur de reconnexion : inventaire et ouverture directe Chrome toujours expirés. Couverture inchangée. Redémarrage manuel Chrome/Codex à proposer avant une autre tentative identique.
