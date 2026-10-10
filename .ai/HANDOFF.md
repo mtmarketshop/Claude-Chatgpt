@@ -1,53 +1,39 @@
 # AI HANDOFF
 
 Last updated: 2026-10-10
-Agent: Codex
-Current task: T-004 — Relais e-commerce à Claude
+Agent sortant : Claude Code (Sonnet 5.5) → agent entrant : ChatGPT / Codex
+Current task: T-004 — Exploitation e-commerce MTMarketShop (relais)
 Current branch: chore/t-004-relais-claude
 Base branch: main
-Last known commit: 368e703 avant ce checkpoint ; voir git log pour le commit de relais
-GitHub issue / Pull request: none (checkpoint documentaire)
+Last known commit: voir `git log` (commit de relais `chore(ai): checkpoint handoff`)
+GitHub issue / Pull request: none
 
 ## Objective
-Transmettre à Claude le contexte de MTMarketShop via le dépôt local et GitHub.
+Suivre MTMarketShop (Shopify maître + 4Seller vers eBay, TikTok Shop, Temu) sans perte de contexte entre agents.
 
-## Current state
-Analyse Shopify terminée en lecture seule. Aucune modification Shopify. L'utilisateur a explicitement décidé de laisser les huit fiches de diagnostic automobile telles quelles. Aucun travail de correction en cours ou autorisé.
-Le dépôt reste une mémoire de coordination sans application. T-002 et T-003 restent en attente ; aucune stack ou application demandée.
+## Current state (2026-10-10, tout en lecture seule, rien modifié par Claude)
+- Shopify (mtmarketshop.com, plan Basic, EUR) et 4Seller (session Chrome de l'utilisateur) : connectés et fonctionnels.
+- Stocks Shopify / 4Seller / eBay / TikTok cohérents (logiciels DIAG 20, AutoCom 2021 = 18, VCDS 25.3 = 19 ; physiques identiques). Synchro stock 4Seller : 42 réussies, 0 échec sur 24 h.
+- eBay : 14 en vente (8 logiciels DIAG-*-COURRIER + écouteurs, tondeuse, survêtement, ventilateur, lunettes), 2 inactives. Astuce : la liste « En vente » plante si on arrive dessus directement ; cliquer Inactif puis En vente.
+- TikTok : 167 annonces en vente des 8 logiciels (créées le 2026-10-10 par une personne/agent non identifié), 382 supprimées, 52 **gelées par TikTok** (« Unsupported product », 2026-10-07) = les mêmes logiciels. Risque de gel et de sanction du compte.
+- Temu : 0 en vente, 4 inactives, 611 supprimées.
+- Les commandes eBay/TikTok ne remontent pas dans Shopify (dernière #1662, 2026-09-18) : normal, seul le stock est synchronisé.
 
-## Completed
-- Connexion Shopify de Codex vérifiée : MTMarketShop, mtmarketshop.com.
-- Lecture de 13 produits, 10 collections et des huit fiches détaillées de diagnostic.
-- Rapports des 30 derniers jours : 118 sessions, 2 avec ajout au panier, 1 atteignant le checkout, 0 finalisée dans le rapport des sessions ; rapport des ventes : 1 commande et 8,99 EUR. Différence non expliquée ; ne pas conclure à un bug.
-- Constats : titres « Interface diagnostic » mais descriptions de logiciels et interface physique exclue ; trois collections vides (Accessoires automobiles, Fichiers ECU sur mesure, Jeux et jouets) ; plusieurs variantes à stock nul.
-- Propositions présentées sans application. Décision finale : laisser tel quel.
-
-## In progress
-Relais documentaire uniquement. Claude n'a pas été lancé et n'a pas confirmé réception.
-
-## Files changed
-.ai/HANDOFF.md, .ai/TASKS.md, .ai/DECISIONS.md, .ai/SESSION_LOG.md.
-
-## Tests performed
-- git fetch/status/log échouent dans le dossier parent : absence de .git.
-- Ancien clone Documents/GitHub cité précédemment : non trouvé.
-- Nouveau clone GitHub et fetch réussis ; état initial propre sur main, HEAD 368e703.
-- Relecture des documents ; git diff --check réussi avant commit. Aucun test applicatif nécessaire.
+## Decisions (voir `.ai/DECISIONS.md`)
+D-003 laisser les 8 fiches Shopify telles quelles ; D-004 annonces TikTok conservées ; D-005 Shopify reste la référence de stock ; D-006 garder 48 h et surveiller.
 
 ## Problems / blockers
-- Site public inaccessible via l'outil web : apparence, menus et parcours d'achat non vérifiés.
-- Licence, support livré, activation, compatibilité précise et prérequis des logiciels non vérifiés.
-- Les accès Shopify de Codex ne sont pas transférés à Claude ; vérifier son propre accès seulement si nécessaire pour la prochaine demande.
-
-## Decisions already made
-D-001 et D-002 conservées. D-003 : laisser les huit fiches Shopify telles quelles.
+- Raison exacte du gel TikTok : visible seulement dans l'interface vendeur TikTok Shop (non accessible).
+- Auteur de la création des 167 annonces TikTok non identifié.
+- Licence/contrefaçon des logiciels non vérifiées (signalé par 4Seller).
+- Automatisation Chrome sur 4Seller fragile : vérifier chaque écran, ne jamais supprimer sans voir le compteur.
 
 ## Important context
-- Clone opérationnel : C:\Users\PC\Desktop\Claude-Chatgpt-main\github-local.
-- Le dossier parent est une copie sans .git ; ne pas le confondre avec le clone.
-- Français simple ; terminer par « À faire : … Pourquoi : … ». Boutons numérotés pour les prochaines actions utiles.
-- Ne transmettre aucun secret dans Git.
+- Clone opérationnel : C:\Users\PC\Desktop\Claude-Chatgpt-main\github-local (le dossier parent n'a pas de .git).
+- Français simple ; réponses courtes ; terminer par « À faire : … Pourquoi : … » + choix numérotés (1 recommandé, 2 alternative, 3 arrêter). L'utilisateur veut écrire le moins possible.
+- Avant toute correction de stock : AFFICHER AVANT/APRÈS et attendre validation. Aucun secret dans Git.
 
 ## EXACT NEXT ACTION
-Relais pris par Claude le 2026-10-10. À FAIRE le 2026-10-12 : contrôle TikTok (D-006). Expéditions : eBay avant 13 oct, TikTok avant 14 oct. Connecteurs vérifiés : Shopify OK, 4Seller OK (Chrome). État des canaux et décision D-004 (annonces TikTok conservées) : voir `.ai/SESSION_LOG.md` et `.ai/DECISIONS.md`. Prochaine étape possible : vérifier les 14 annonces eBay une par une (lecture seule), puis attendre la demande de l'utilisateur. Aucune dépublication ni modification Shopify/4Seller sans accord ; aucun merge ni déploiement.
-
+1. Expéditions à faire par l'utilisateur : 2 commandes eBay (AutoCom 2021 ; AutoCom 2021 + VCDS 25.3) avant le 2026-10-13 ; 1 commande TikTok ES (ECO-004 jaune) avant le 2026-10-14 (Chronopost). L'utilisateur confirme avoir la pièce.
+2. Le 2026-10-12 : contrôle TikTok en lecture seule (4Seller > Produits > TikTok : compteurs En vente / Vérification > onglet Gelé). Si de nouvelles annonces sont gelées, proposer la dépublication groupée sur TikTok des logiciels (accord de l'utilisateur obligatoire). Pas de rappel programmé : l'utilisateur doit le demander (« contrôle TikTok »).
+3. Sinon attendre la demande de l'utilisateur. Aucune modification Shopify/4Seller/eBay/TikTok, aucun merge ni déploiement sans accord explicite.
