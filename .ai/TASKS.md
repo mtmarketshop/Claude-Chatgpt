@@ -23,3 +23,4 @@
 - Relais Claude reçu et lu par Codex (7b81d7e), contrairement au statut historique « réception non confirmée » ci-dessus.
 - Suivi e-commerce : en attente de la prochaine demande ; contrôle TikTok prévu le 2026-10-12, sans automatisation.
 - Expéditions restant à confirmer par l'utilisateur : deux eBay avant le 13 octobre et une TikTok ES avant le 14 octobre, selon les observations de Claude.
+- Nouvelle vérification du relais : aucun nouveau travail Claude après 2f81d53 ; prochaines actions inchangées.

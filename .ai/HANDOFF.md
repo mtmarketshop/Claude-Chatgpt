@@ -41,3 +41,5 @@ D-003 laisser les 8 fiches Shopify telles quelles ; D-004 annonces TikTok conser
 ## Reprise Codex — 2026-10-10
 Relais de Claude lu et comparé à Git : fetch réussi, branche propre et synchronisée au commit 7b81d7e. Constats de Claude conservés comme observations antérieures, sans nouvelle vérification des plateformes. Aucun changement externe. Contrôle du 12 octobre non anticipé ; aucune automatisation créée. git diff --check effectué avant checkpoint ; pas de code changé.
 
+## Vérification de reprise — 2026-10-10
+À la demande explicite de reprise sur chore/t-004-relais-claude : fetch réussi, HEAD 2f81d53 synchronisé, aucun nouveau commit de Claude. EXACT NEXT ACTION inchangée : expéditions par l'utilisateur, contrôle TikTok le 12 octobre sur demande, sinon attente. Aucune intervention externe.

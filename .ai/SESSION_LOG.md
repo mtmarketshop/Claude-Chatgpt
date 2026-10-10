@@ -34,3 +34,8 @@
 - HANDOFF, TASKS, DECISIONS, SESSION_LOG et protocole lus. Git fetch réussi ; branche chore/t-004-relais-claude propre et synchronisée sur 7b81d7e.
 - Décisions D-003 à D-006 conservées. Aucun changement Shopify/4Seller/eBay/TikTok ; aucune nouvelle vérification des plateformes ni automatisation.
 - Prochaine action : expéditions à faire par l'utilisateur ; contrôle TikTok en lecture seule le 12 octobre sur demande. Pas de code changé ; git diff --check avant checkpoint.
+
+## 2026-10-10 — Codex — Vérification explicite de EXACT NEXT ACTION
+- Fetch réussi ; branche demandée synchronisée à 2f81d53. Aucun nouveau commit de Claude.
+- Protocole et relais relus ; étapes : expéditions par utilisateur, contrôle TikTok le 12 octobre sur demande, sinon attente. Aucune écriture sur les plateformes ni automatisation.
+- Documentation seule ; git diff --check validé avant commit.
